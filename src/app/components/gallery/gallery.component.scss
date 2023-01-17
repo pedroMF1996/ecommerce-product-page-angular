@@ -1,0 +1,38 @@
+img{
+  border-radius: 15px;
+}
+
+.selectableImg{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($color: #fff, $alpha: 0.3);
+    transform: translateY(-100%);
+    transition: all 0.25s;
+    mix-blend-mode: lighten;
+  }
+  &:hover::before{
+    transform: translateY(0%);
+  }
+}
+
+.selectedImg{
+  & span{
+    content: '';
+    mix-blend-mode: lighten;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($color: #fff, $alpha: 0.7);
+  }
+}

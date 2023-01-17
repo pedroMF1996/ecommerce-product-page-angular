@@ -1,1 +1,15 @@
-<p>gallery works!</p>
+<div class="row m-0">
+  <div class="col-12">
+    <img src="../../../assets/images/image-product-1.jpg" alt="Imagem produto selecionado" class="w-100 h-100" #imgAmplificada>
+  </div>
+</div>
+<div class="row m-0 mt-4">
+  <div *ngFor="let img of imgsProgutos; let i = index"
+       [ngClass]="{'selectedImg': i == 0,
+                  'selectableImg': i != 0}"
+       class="col-3 position-relative"
+       (click)="selecionarImagem($event.target, img.url)">
+       <span></span>
+    <img [src]="img.url" class="w-100 h-100">
+  </div>
+</div>

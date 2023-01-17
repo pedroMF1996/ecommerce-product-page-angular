@@ -6,14 +6,11 @@ import { EcommerceProductPageComponent } from './ecommerce-product-page.componen
 import { DetailsComponent } from 'src/app/components/details/details.component';
 import { GalleryComponent } from 'src/app/components/gallery/gallery.component';
 import { MarketCartComponent } from 'src/app/components/market-cart/market-cart.component';
-import { ToolbarComponent } from 'src/app/components/toolbar/toolbar.component';
 
 
 @NgModule({
   declarations: [
     EcommerceProductPageComponent,
-    ToolbarComponent,
-    MarketCartComponent,
     GalleryComponent,
     DetailsComponent
   ],
@@ -23,6 +20,7 @@ import { ToolbarComponent } from 'src/app/components/toolbar/toolbar.component';
   ],
   exports: [
     EcommerceProductPageComponent
+
   ]
 })
 export class EcommerceProductPageModule { }
