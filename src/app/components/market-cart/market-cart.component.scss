@@ -1,0 +1,63 @@
+.iconMarketCar{
+  width: 30px !important;
+  height: 30px !important;
+  font-size: 30px !important;
+}
+
+.divList{
+  min-height: 300px;
+  min-width: 300px;
+  top: 180%;
+  left: 50%;
+  transform-origin: top;
+  transform: translateX(-50%) rotateX(90deg);
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+              15px 15px 15px rgba(0, 0, 0, 0.2),
+              inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+              inset 2.5px 2.5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.activeCart{
+  transform: translateX(-50%) rotateX(0deg);
+}
+
+.description{
+  font-size: 1.1rem;
+  color: black;
+}
+
+.deleteIcon{
+  width: 25px;
+  height: 35px;
+  margin: auto;
+}
+
+button{
+  background: orange;
+  color: aliceblue;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  font-size: 1.2rem;
+  transition: all 0.25s;
+  &:hover{
+    background: orange;
+    color: aliceblue;
+    transform:translateX(-50%) scale(1.05);
+  }
+}
+
+.alargar{
+  width: 400px;
+}
+
+.imgProduto{
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  font-size: 3.5rem !important;
+  border-radius: 5px;
+}
