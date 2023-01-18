@@ -14,4 +14,8 @@ export class MarketCartComponent implements OnInit {
   activateList(){
     this.divList?.nativeElement.classList.toggle('activeCart');
   }
+
+  logar(event:any){
+    console.log(event)
+  }
 }
