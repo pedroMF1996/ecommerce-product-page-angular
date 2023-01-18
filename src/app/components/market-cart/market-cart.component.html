@@ -1,16 +1,18 @@
 <img src="../../../assets/images/icon-cart.svg" alt="market car icon" class="iconMarketCar" role="button" (click)="activateList()">
 <div #list class="position-absolute divList p-4">
-  <h3 class="w-100 h4">Cart</h3>
-  <hr class="w-100">
-  <div class="row alargar">
-    <div class="col-2">
-      <img src="../../../assets/images/image-product-1-thumbnail.jpg" alt="foto produto" class="imgProduto">
-    </div>
-    <div class="col-8">
-      <p class="description">Fall Limited Edition Sneakers</p>
-    </div>
-    <div class="col-2">
-      <img src="../../../assets/images/icon-delete.svg" role="button" alt="delete icon" class="deleteIcon">
+  <h3 class="w-100 h4 m-0">Cart</h3>
+  <hr class="w-100 mt-2 mb-4">
+  <div class="w-100 listProduct">
+    <div class="row">
+      <div class="col-3">
+        <img src="../../../assets/images/image-product-1-thumbnail.jpg" alt="foto produto" class="imgProduto">
+      </div>
+      <div class="col-7">
+        <p class="description">Fall Limited Edition Sneakers</p>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <img src="../../../assets/images/icon-delete.svg" role="button" alt="delete icon" class="deleteIcon">
+      </div>
     </div>
   </div>
   <button (click)="logar($event)" class="btn">Checkout</button>
